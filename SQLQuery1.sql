@@ -37,5 +37,12 @@ select avg(salary) as AverageSalary from employee_payroll;
 select count(salary) as NumOfEmployees from employee_payroll;
 select count(salary) as NumberOfEmployee,Gender from employee_payroll group by Gender;
 
+---UC8 : Ability to extend data to store information like employee phone, address and department
+ALTER TABLE employee_payroll ADD Phone bigint;
+select * from employee_payroll;
+ALTER TABLE employee_payroll ADD Address varchar(250) null default 'Sangli';
+ALTER TABLE employee_payroll ADD Department varchar(250) not null default 'RND';
+
+
 
 
