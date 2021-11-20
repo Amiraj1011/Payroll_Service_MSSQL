@@ -15,3 +15,9 @@ INSERT INTO employee_payroll (name,salary,startDate) VALUES ('MSD',9999999.99,'2
 
 --UC4 : Ability to retrieve all the employee payroll data 
 select * from employee_payroll;
+
+---UC5 : Ability to retrieve salary data for particular employee
+select id,name from employee_payroll where name = 'AMIR';
+select * from employee_payroll where startDate between cast('2020-01-02' as date) and getdate();
+
+
